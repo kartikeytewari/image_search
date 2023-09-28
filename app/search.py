@@ -7,7 +7,7 @@ client = weaviate.Client(
 )
 
 # read the test image
-test_image = "cat-1.png"
+test_image = "2.png"
 with open("../data/test/" + test_image, "rb") as local_image:
     image_embedding = pybase64.b64encode(local_image.read())
     image_embedding = image_embedding.decode('utf-8')
@@ -29,3 +29,5 @@ with open("../data/test/" + test_image, "rb") as local_image:
     img_file = open('out.png', 'wb')
     img_file.write(result_image)
     img_file.close()
+
+    print (result_text)

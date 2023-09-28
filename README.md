@@ -1,3 +1,5 @@
 # Image Search 
 
-- A open-source search engine for images using vector database
+- A search engine for images using weaviate
+
+## Steps to run the project
