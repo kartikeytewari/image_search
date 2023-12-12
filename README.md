@@ -10,6 +10,5 @@
 
 ## Tech Stack
 - Python
-- Weaviate (vector db)
+- Weaviate (Vector DB)
 - Docker
-- Unix
