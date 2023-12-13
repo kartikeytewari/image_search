@@ -4,9 +4,11 @@
 
 ## Steps to run the project
 - Run the server for vectorDB: `docker compose -f conf/docker-weaviate.yml up`
-- Generate the schema: `python3 ./app/gen_schema.py`
-- Load the seed images: `python3 ./app/load_data.py`
-- Search for images `python3 ./app/search.py`
+- Go to app folder: `cd app`
+- Source python virtual environment: `source ./venv/bin/activate`
+- Generate the database schema: `python3 gen_schema.py`
+- Load the seed images: `python3 load_data.py`
+- Search for images: `python3 search.py`
 
 ## Tech Stack
 - Python
