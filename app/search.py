@@ -16,11 +16,15 @@ with open("../data/test/" + test_image, "rb") as local_image:
         client.query
         .get("meme_image", ["meme_image", "meme_text"])
         .with_near_image({
-            "image": image_embedding
-        }, encode=False)
+            "image": image_embedding,
+            "distance": 0.4
+        },
+        encode=False)
         .with_limit(1)
         .do()
     )
+
+    print (result_embedding)
 
     result_image = result_embedding["data"]["Get"]["Meme_image"][0]["meme_image"]
     result_text = result_embedding["data"]["Get"]["Meme_image"][0]["meme_text"]
