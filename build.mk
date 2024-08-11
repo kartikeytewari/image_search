@@ -1,7 +1,0 @@
-compile:
-
-run:
-
-clean:
-
-test:
