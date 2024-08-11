@@ -1,6 +1,5 @@
 import weaviate
 import pybase64
-import json
 
 client = weaviate.Client(
     url="http://localhost:8080"
