@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/app"
+    schedule:
+      interval: "daily"
+      # time: "23:30"
+    # open-pull-requests-limit: 10
+    commit-message:
+      prefix: "[app] dependency"
